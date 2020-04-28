@@ -44,7 +44,7 @@ public class BankAccount {
         msg = msg + "<p>Your Password:  " + (time + hashCode) + "</p>\n\n";
         
         try {
-             Mailer.send("junipertest00@gmail.com", "junipertest00@#", member.getEmail(), "Account No and Password", msg);
+             Mailer.send("email@gmail.com", "password", member.getEmail(), "Account No and Password", msg);
        
         } catch (Exception e) {
             System.out.println(e.toString());
